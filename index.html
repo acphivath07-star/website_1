@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clipnest helps creators save and organize videos they own or have permission to use.">
+  <title>Clipnest — Save your videos, simply</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Clipnest home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>clipnest</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="header-link" href="#start">Start saving <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Your content, in your hands</p>
+          <h1>Save what<br><em>you</em> create.</h1>
+          <p class="hero-lede">A calm, fast way to save videos you own or have permission to use. No clutter. No complicated setup.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#start">Get started <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="trust-note"><span class="mini-lock" aria-hidden="true">⌑</span> Built for creators who respect ownership</div>
+        </div>
+        <div class="hero-art" aria-label="Video file organization illustration">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="orbit-ring ring-one"></div>
+          <div class="orbit-ring ring-two"></div>
+          <div class="video-card card-back"><span class="card-tag">ARCHIVE</span><span class="card-lines"></span></div>
+          <div class="video-card card-main">
+            <div class="card-top"><span class="play-badge">▶</span><span class="card-duration">04:28</span></div>
+            <div class="card-scene"><span class="scene-sun"></span><span class="scene-hill hill-left"></span><span class="scene-hill hill-right"></span><span class="scene-person"></span></div>
+            <div class="card-bottom"><span>my-video-final.mp4</span><span class="status-pill">READY</span></div>
+          </div>
+          <div class="floating-label label-top">YOUR LIBRARY <span>↗</span></div>
+          <div class="floating-label label-bottom"><span class="pulse-dot"></span> SAVED SECURELY</div>
+          <span class="spark spark-a">✦</span><span class="spark spark-b">✧</span>
+        </div>
+      </section>
+
+      <section class="marquee-bar" aria-label="Clipnest benefits">
+        <div class="marquee-inner"><span>YOUR FILES</span><b>✦</b><span>YOUR RIGHTS</span><b>✦</b><span>YOUR FLOW</span><b>✦</b><span>YOUR FILES</span><b>✦</b><span>YOUR RIGHTS</span><b>✦</b><span>YOUR FLOW</span></div>
+      </section>
+
+      <section class="intro section-wrap" id="features">
+        <div class="section-kicker">01 / THE SIMPLE WAY</div>
+        <div class="intro-content"><h2>Less hunting.<br><span>More making.</span></h2><div><p>Whether you are backing up a launch, collecting your own channel videos, or preparing files for your next edit, Clipnest keeps the useful part simple.</p><a class="arrow-link" href="#start">Explore the workspace <span>→</span></a></div></div>
+      </section>
+
+      <section class="feature-grid section-wrap" id="how-it-works">
+        <article class="feature-card feature-dark"><div class="feature-number">01</div><div class="feature-icon icon-link">↗</div><h3>Drop in a link</h3><p>Paste a direct link to a file you own. Clipnest checks the source before anything is added to your library.</p><span class="card-arrow">↗</span></article>
+        <article class="feature-card feature-yellow"><div class="feature-number">02</div><div class="feature-icon icon-folder">⌁</div><h3>Keep it together</h3><p>Give every video a home with tidy names, useful details, and a library that is easy to scan.</p><span class="card-arrow">↗</span></article>
+        <article class="feature-card feature-paper"><div class="feature-number">03</div><div class="feature-icon icon-download">↓</div><h3>Take it anywhere</h3><p>Download your approved files in the format you need, with temporary links that keep your content private.</p><span class="card-arrow">↗</span></article>
+      </section>
+
+      <section class="start-panel section-wrap" id="start">
+        <div class="start-copy"><div class="section-kicker">02 / READY WHEN YOU ARE</div><h2>Bring your<br><em>best work.</em></h2><p>Start with a video file you own or are authorized to save. You can connect a storage link or upload directly.</p></div>
+        <form class="save-form" id="save-form"><label for="video-url">Video or storage link</label><div class="input-row"><input id="video-url" type="url" placeholder="https://your-storage.com/video.mp4" required><button class="button button-yellow" type="submit">Check link <span>↗</span></button></div><label class="permission-check"><input id="permission" type="checkbox" required><span class="checkmark"></span><span>I own this video or have permission to save it.</span></label><p class="form-message" id="form-message" role="status"></p></form>
+      </section>
+
+      <section class="faq section-wrap" id="faq"><div class="section-kicker">03 / GOOD TO KNOW</div><div class="faq-grid"><h2>Questions,<br><span>answered.</span></h2><div class="faq-list"><details open><summary>Can I save any YouTube video?</summary><p>Clipnest is designed for videos you own or have permission to use. For YouTube content, use the creator's official download tools or Google Takeout.</p></details><details><summary>Do you keep my files forever?</summary><p>No. Approved files can use temporary download links, while you control where your long-term originals live.</p></details><details><summary>What links are supported?</summary><p>The first version is intended for direct links from storage providers you control, such as S3, Cloudinary, or another approved file host.</p></details></div></div></section>
+    </main>
+
+    <footer class="site-footer section-wrap"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>clipnest</span></a><p>Save the work that is yours.</p><span class="footer-meta">© 2026 CLIPNEST / BUILT WITH CARE</span></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
